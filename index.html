@@ -1,23 +1,29 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<style>
-    body {
-        overflow: hidden; /* Hide horizontal scrollbar */
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag for responsive design -->
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            overflow: hidden; /* Hide horizontal scrollbar */
+        }
 
-    iframe{
-        position: absolute; 
-        width: calc(100% + 2px);
-        height: calc(100% + 52px);
-        left: -2px; 
-        top:-52px;
-    }
-</style>
-
-<html>
+        iframe {
+            position: fixed; /* Use fixed positioning for full viewport coverage */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            border: none; /* Remove default border */
+            top: 0; /* Align to the top */
+            left: 0; /* Align to the left */
+        }
+    </style>
+</head>
 
 <body>
-    <iframe src="https://elizabethcdomingue.wixsite.com/notassaludables" />
+    <iframe src="https://elizabethcdomingue.wixsite.com/notassaludables" title="Notas Saludables"></iframe> <!-- Use closing tag for iframe -->
 </body>
 
 </html>
